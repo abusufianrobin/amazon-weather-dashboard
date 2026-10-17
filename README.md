@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Weather Operations Intelligence Command
+
+A real-time weather monitoring dashboard built with **Next.js**, integrating weather API data, YouTube regional broadcasts, and Windy live webcam feeds into a unified weather intelligence interface.
+
+## UI Screenshots
+
+### 1. Main Dashboard
+
+The main dashboard displays the 3D atmosphere visualization alongside real-time weather information, including temperature, wind speed, humidity, and current weather conditions.
+
+![Weather Operations Intelligence Command Dashboard](UI_Output/Dashboard.PNG)
+
+### 2. API Data and Regional Weather Monitoring
+
+This interface integrates live Windy webcam surveillance feeds and regional YouTube broadcasts to provide additional visual context for weather monitoring.
+
+![API Data and Live Regional Weather Monitoring](UI_Output/API_Data.PNG)
+
+## Features
+
+- **Real-Time Weather Monitoring:** Retrieve and display weather information using a weather API.
+- **3D Atmosphere Visualization:** Interactive visual representation of the atmosphere.
+- **Weather Metrics:** Monitor temperature, wind speed, humidity, and weather conditions.
+- **Live Windy Webcam Feed:** View available live webcam feeds for weather observation.
+- **Regional YouTube Broadcasts:** Display relevant regional weather videos and broadcasts.
+- **Location-Based Search:** Search for weather information by city.
+- **Responsive Dashboard:** A modern dark-themed interface for weather intelligence and monitoring.
+
+## Tech Stack
+
+- **Frontend:** Next.js, React, TypeScript
+- **Styling:** CSS
+- **Data Integration:** Weather API, YouTube, Windy
+- **Development Environment:** Node.js, npm
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/)
+- npm (included with Node.js)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone YOUR_GITHUB_REPOSITORY_URL
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd YOUR_PROJECT_DIRECTORY
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Project Structure
+
+```text
+amazon-weather-dashboard/
+├── .env.local
+├── app/
+│   ├── api/
+│   │   └── dashboard/
+│   │       └── route.ts
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── Weather3DCanvas.tsx
+│   ├── WeatherMetrics.tsx
+│   ├── WebcamPlayer.tsx
+│   └── YoutubeVideos.tsx
+├── lib/
+│   └── api.ts
+├── UI_Output/
+│   └── API_Data.PNG
+|   └── Dashboard.PNG
+├── package.json
+└── tailwind.config.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+*Note: Adjust the project structure above to match your actual repository.*
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://react.dev/)
+- [WeatherAPI Documentation](https://www.weatherapi.com/docs/)
+- [YouTube Data API Documentation](https://developers.google.com/youtube/v3)
+- [Windy Documentation](https://api.windy.com/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+You can deploy this Next.js application using [Vercel](https://vercel.com/).
 
-## Deploy on Vercel
+For more information, see the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Abu Sufian Robin**
+
+- GitHub: [abusufianrobin](https://github.com/abusufianrobin)
+- Portfolio: [abusufianrobin.github.io](https://abusufianrobin.github.io)
